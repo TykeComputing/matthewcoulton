@@ -261,3 +261,11 @@ textarea {
   }
 }
 
+/* Below are my own additions to the bootstrap *?
+
+/* Sticky Header */
+header-component {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

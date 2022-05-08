@@ -7,11 +7,15 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!--TODO: Finish These-->
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <!--Font Awesome for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -20,37 +24,27 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <!--Script inserts of header and footer code-->
+  <script src="js/header.js" type="text/javascript" defer></script>
+  <script src="js/footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-  <header>
-    <!-- TODO Insert Horizontal Menu and general header here-->
-    <div class="container">
-        <div class="banner">
-            <!-- TODO Insert Header Logos & Buttons Here (LEFT)-->
-            <h1>Matthew Coulton/h1>
-            <!-- TODO Insert Header Logos & Buttons here(RIGHT)-->
-        </div>
-        <div class="menu">
-            <button class="dropbtn" href="index.html">Home</button>
-            <div class="dropdowncontent">
-                <a href="index.html">Home</a>
-            </div>
-        </div>
-    </div>
-</header>
-
-<main>
   
-</main>
+  <header-component></header-component>
 
-
+  <main>
+      <!-- Your page's content -->
+  </main>
+  
+  <footer-component></footer-component>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--TODO: Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
