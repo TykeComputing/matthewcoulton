@@ -11,7 +11,7 @@ footerTemplate.innerHTML = `
       justify-content: space-between;
       align-items: right;
       background-color: #fff;
-      position: absolute;
+      position: relative;
       bottom: 0;
       right: 75px;
     }

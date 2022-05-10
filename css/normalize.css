@@ -30,6 +30,9 @@ body {
 
 main {
   display: block;
+  margin: auto;
+  margin-top: 160px;
+  height: 100%;
 }
 
 /**

@@ -177,6 +177,9 @@ textarea {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  main {
+    min-height: 750px;
+  }
 }
 
 @media print,
