@@ -2,6 +2,12 @@ const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
   <style>
+    header {
+      align-items: center;
+      justify-content: center;
+      max-height: 30%;
+    }
+
     nav {
       height: 30px;
       padding: 1px;
@@ -48,9 +54,30 @@ headerTemplate.innerHTML = `
       min-height: 27px;
     }
 
-    .titlesubtext {
-      margin-top: -10px;
+    .headerbanner {
+      display: flex;
+      margin: auto;
       margin-bottom: 10px;
+      width: 80%;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      top: 15px;
+    }
+
+    .titletext {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      max-height: 125px;margin-top: -10px;
+    }
+
+    .titlesubtext {
+      margin-top: -30px;
+      margin-bottom: 5px;
       letter-spacing: 0.2em;
       font-family: kepler-w03-light-scd-cp,serif;
       font-size: 30px;
@@ -60,58 +87,38 @@ headerTemplate.innerHTML = `
       font: normal normal normal 17px/1.4em 'eb garamond',serif;
     }
 
-    .titletext {
-      text-align: center;
-      width: 50%;
-    }
-
     .leftlogos {
-      width: 20%;
-      position: relative;
-      left: 8px;
+      display: flex;
+      width: 30%;
+      justify-content: space-evenly;
+      align-items: center;
     }
 
     #arlogo {
-      position: relative;
-      top: 17px;
-      width: 60%;
+      width: 80%;
     }
 
     #siglogo {
-      position: relative;
-      left: 25px;
     }
 
     .rightlogos {
-      width: 20%;
-      position: relative;
-      top: 20px;
-      right: -15px;
+      display: flex;
+      width: 30%;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: auto;
     }
 
     #mdalogo {
-      width: 18%;
-      position: relative;
-      right: 20px;
-      top: -15px;
-    }
-
-    #spotlightlogo {
-      width: 28%;
-      position: relative;
+      
     }
 
     #acelogo {
-      width: 25%;
-      position: relative;
-      top: -4px;
-      left: 20px;
+      width: 45%;
     }
 
-    .headerbanner {
-      display: flex;
-      justify-content: center;
-      align: center;
+    #spotlightlogo {
+      width: 45%;
     }
 
     .menubar {
@@ -169,8 +176,8 @@ headerTemplate.innerHTML = `
 
       <div class="rightlogos">
       <a href="https://www.movementdirectorsassociation.com"><img class="logos" id="mdalogo" src="img/logos/mda.webp" alt="Movement Director's Association Logo"></a>
-      <a href="https://www.spotlight.com/8615-4506-3434"><img class="logos" id="spotlightlogo" src="img/logos/spotlight.jpeg" alt="Spotlight Casting Directory Logo"></a>
       <a href="https://www.artscouncil.org.uk"><img class="logos" id="acelogo" src="img/logos/acesmall.png" alt="Arts Council England Logo"></a>
+      <a href="https://www.spotlight.com/8615-4506-3434"><img class="logos" id="spotlightlogo" src="img/logos/spotlight.jpeg" alt="Spotlight Casting Directory Logo"></a>
       </div>
     </div>
 
