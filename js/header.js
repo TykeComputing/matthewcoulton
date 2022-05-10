@@ -59,7 +59,6 @@ headerTemplate.innerHTML = `
     .headerbanner {
       display: flex;
       margin: auto;
-      margin-top: 10px;
       margin-bottom: 15px;
       width: 80%;
       max-width: 960px;
