@@ -9,11 +9,12 @@ footerTemplate.innerHTML = `
       display: flex;
       flex-shrink: 0;
       justify-content: space-between;
-      align-items: right;
+      align-items: center;
       background-color: #fff;
       position: relative;
       bottom: 0;
-      right: 75px;
+      max-width: 960px;
+      margin: auto;
     }
 
     ul {
@@ -42,18 +43,16 @@ footerTemplate.innerHTML = `
     
     .social-row {
       font-size: 20px;
-      position: relative;
     }
     
     .social-row li a {
-      margin: 0 15px;
+      margin: 0 10px;
     }
 
     .socials  {
       position: relative;
       bottom: 20px;
       align: center;
-      padding-bottom: 70px;
     }
 
     #acefull {
@@ -61,9 +60,6 @@ footerTemplate.innerHTML = `
     }
 
     #copyright {
-      position: relative;
-      bottom: -80px;
-      right: -360px;
       font-family: kepler-w03-light-scd-cp,serif;
       font-size: 8px;
       line-height: normal;
