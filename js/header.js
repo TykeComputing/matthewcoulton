@@ -6,6 +6,8 @@ headerTemplate.innerHTML = `
       align-items: center;
       justify-content: center;
       max-height: 30%;
+      z-index: 5;
+      background-color:  white;
     }
 
     nav {
@@ -16,7 +18,6 @@ headerTemplate.innerHTML = `
       max-width: 650px;
       align-items: center;
       justify-content: space-between;
-      background-color:  white;
     }
 
     ul {
@@ -66,6 +67,7 @@ headerTemplate.innerHTML = `
       align-items: center;
       position: relative;
       top: 15px;
+      background-color: white;
     }
 
     .titletext {
@@ -133,6 +135,7 @@ headerTemplate.innerHTML = `
 
     .menubar {
       background: url("img/banner.png") repeat-x 0 100%;
+      background-color: transparent;
       min-height: 8px;
       z-index: 1;
     }
