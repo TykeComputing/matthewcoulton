@@ -88,10 +88,10 @@ headerTemplate.innerHTML = `
       margin-bottom: 5px;
       letter-spacing: 0.2em;
       font-family: kepler-w03-light-scd-cp,serif;
+      font: normal normal normal 14px/1.4em 'eb garamond',serif;
       font-weight: bold;
       line-height: normal;
       min-height: 27px;
-      font: normal normal normal 14px/1.4em 'eb garamond',serif;
     }
 
     .leftlogos {

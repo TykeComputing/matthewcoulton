@@ -6,11 +6,18 @@
   position: relative;
   margin: auto;
   margin-top: 12.5%;
+  align-items: center;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+/* banner image properties */
+.banners {
+  width: 100%;
+  max-height: 70vh;
 }
 
 /* Next & previous buttons */
@@ -41,14 +48,32 @@
 }
 
 /* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
+.captiontext {
+  display: none;
+  color: black;
   padding: 8px 12px;
+  background-color: rgba(255,255,255,0.95);
+  height: 130px;
   position: absolute;
-  bottom: 8px;
+  bottom: 0px;
   width: 100%;
-  text-align: center;
+  text-align: right;
+  font-family: kepler-w03-light-scd-cp,serif;
+  font: normal normal normal 18px 'eb garamond',serif;
+}
+
+.captiontext h2 {
+  font-family: kepler-w03-light-scd-cp,serif;
+  font: normal normal normal 24px 'eb garamond',serif;
+  font-weight: bold;;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow-container:hover .captiontext {
+  display: block;
+  animation-name: fade;
+  animation-duration: 0.5s;
 }
 
 /* Number text (1/3 etc) */
