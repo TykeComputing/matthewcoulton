@@ -87,6 +87,53 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.linebar {
+  background: url("img/banner.png") repeat-x 0 960px;
+  background-color: transparent;
+  min-height: 8px;
+  z-index: 1;
+}
+
+.headshots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  max-width: 100vw;
+  padding: 0;
+}
+
+.headshotsbanner {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.headshotwide {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+}
+
+.biography {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  max-width: 90vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.biog {
+  font-family: 'Lato',sans-serif;
+  text-align: justify;
+  text-align-last: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

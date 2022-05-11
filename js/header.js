@@ -30,11 +30,11 @@ headerTemplate.innerHTML = `
     }
     
     nav a {
-      font-weight: 500;
+      font-family: kepler-w03-light-scd-cp,'Lato',serif;
+      font-weight: 400;
       color: #000;
       text-decoration: none;
-      font-size: 12px;
-      font-weight: 500;
+      font-size: 14px;
     }
     
     nav a:hover {
@@ -46,9 +46,8 @@ headerTemplate.innerHTML = `
 
     h1 {
       font-size: 34px;
-      font-weight: bold;
-      font-family: kepler-w03-light-scd-cp,serif;
-      font: normal normal normal 2em 'eb garamond',serif;
+      font-weight: 700;
+      font-family: kepler-w03-light-scd-cp,'Lato',serif;
       text-align: center;
       letter-spacing: 0.2em;
       margin-top: 0.67em;
@@ -87,9 +86,9 @@ headerTemplate.innerHTML = `
       margin-top: -30px;
       margin-bottom: 5px;
       letter-spacing: 0.2em;
-      font-family: kepler-w03-light-scd-cp,serif;
-      font: normal normal normal 14px/1.4em 'eb garamond',serif;
-      font-weight: bold;
+      font-family: kepler-w03-light-scd-cp,'Lato',serif;
+      font-size: 14px;
+      font-weight: 400;
       line-height: normal;
       min-height: 27px;
     }
