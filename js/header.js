@@ -31,7 +31,7 @@ headerTemplate.innerHTML = `
     
     nav a {
       font-family: kepler-w03-light-scd-cp,'Lato',serif;
-      font-weight: 400;
+      font-weight: 700;
       color: #000;
       text-decoration: none;
       font-size: 14px;
@@ -88,7 +88,7 @@ headerTemplate.innerHTML = `
       letter-spacing: 0.2em;
       font-family: kepler-w03-light-scd-cp,'Lato',serif;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 700;
       line-height: normal;
       min-height: 27px;
     }
@@ -200,35 +200,30 @@ headerTemplate.innerHTML = `
       <a href="index.html"><div class="linkbox"><p class="linkp">HOME</p></div></a>
       <a href="about.html"><div class="linkbox"><p class="linkp">ABOUT</p></div></a>
       <div class="dropdown">
-        <a href="performance/performance.html"><div class="linkbox"><p class="linkp">PERFORMANCE</p></div></a>
+        <a href="performance.html"><div class="linkbox"><p class="linkp">PERFORMANCE</p></div></a>
           <div class="dropdown-content">
-            <a href="performance/theatre/theatre.html"><div class="sublinkbox"><p class="linkp">THEATRE</p></div></a>
-            <a href="performance/screen/screen.html"><div class="sublinkbox"><p class="linkp">SCREEN</p></div></a>
-            <a href="performance/puppetry/puppetry.html"><div class="sublinkbox"><p class="linkp">PUPPETRY</p></div></a>
-            <a href="performance/voice/voice.html"><div class="sublinkbox"><p class="linkp">VOICE</p></div></a>
+            <a href="theatre.html"><div class="sublinkbox"><p class="linkp">THEATRE</p></div></a>
+            <a href="screen.html"><div class="sublinkbox"><p class="linkp">SCREEN</p></div></a>
+            <a href="puppetry.html"><div class="sublinkbox"><p class="linkp">PUPPETRY</p></div></a>
+            <a href="storytelling.html"><div class="sublinkbox"><p class="linkp">STORYTELLING</p></div></a>
+            <a href="voice.html"><div class="sublinkbox"><p class="linkp">VOICE</p></div></a>
           </div>
       </div>
       <div class="dropdown">
-        <a href="creative/creative.html"><div class="linkbox"><p class="linkp">CREATIVE</p></div></a>
+        <a href="creative.html"><div class="linkbox"><p class="linkp">CREATIVE</p></div></a>
           <div class="dropdown-content">
-            <a href="creative/directing/directing.html"><div class="sublinkbox"><p class="linkp">DIRECTING</p></div></a>
-            <a href="creative/movement-directing/movement-directing.html"><div class="sublinkbox"><p class="linkp">MOVEMENT DIRECTING</p></div></a>
-            <a href="creative/producing/producing.html"><div class="sublinkbox"><p class="linkp">PRODUCING</p></div></a>
-            <a href="creative/facilitation/facilitation.html"><div class="sublinkbox"><p class="linkp">FACILITATION</p></div></a>
+            <a href="directing.html"><div class="sublinkbox"><p class="linkp">DIRECTING</p></div></a>
+            <a href="movement-directing.html"><div class="sublinkbox"><p class="linkp">MOVEMENT DIRECTING</p></div></a>
+            <a href="producing.html"><div class="sublinkbox"><p class="linkp">PRODUCING</p></div></a>
+            <a href="facilitation.html"><div class="sublinkbox"><p class="linkp">FACILITATION</p></div></a>
           </div>
       </div>
       <div class="dropdown">
-        <a href="teaching/teaching.html"><div class="linkbox"><p class="linkp">TEACHING</p></div></a>
+        <a href="teaching.html"><div class="linkbox"><p class="linkp">TEACHING</p></div></a>
           <div class="dropdown-content">
             <!--TODO: Teaching Pages design-->
           </div>
       </div>
-      <div class="dropdown">
-      <a href="storytelling/storytelling.html"><div class="linkbox"><p class="linkp">STORYTELLING</p></div></a>
-        <div class="dropdown-content">
-          <!--TODO: Storytelling Pages design-->
-        </div>
-    </div>
       <a href="contact.html"><div class="linkbox"><p class="linkp">CONTACT</p></div></a>
     </nav>
     <div class="menubar">
