@@ -147,13 +147,12 @@ textarea {
   width: fit-content;
 }
 
+
 .sectionbanner {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  max-width: 960px;
+  width: 100vw;
   margin: auto;
-  margin-top: 10px;
 }
 
 .theatreimg {
@@ -165,7 +164,10 @@ textarea {
 
 .sectiontitle {
   padding: 0;
-  margin-top: 5px;
+  margin-top: 25px;
+  letter-spacing: 0.2em;
+  font-family: kepler-w03-light-scd-cp,'Lato',serif;
+  text-decoration: underline;
 }
 
 
@@ -173,35 +175,39 @@ textarea {
 .portfoliotiles {
   display: grid;
   position: relative;
-  padding-top: 20vh;
-  column-gap: 10px;
-  row-gap: 20px;
+  margin: auto;
+  padding: 0;
+  padding-top: 0px;
+  column-gap: 5px;
+  row-gap: 10px;
+  width: 960px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12, 5vw);
-  width: 90vw;
-  max-width: 960px;
+  grid-auto-rows: 300px; /*height of row*/
+  grid-auto-flow: row;
+  max-width: 90vw;
 }
 
-.tile {
+.portfoliotile {
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  max-height: 200px;
+  width: 300px;
+  max-height: 400px;
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding: 0;
 }
 
-.tileimage {
-  width: 100%;
-  height: 100%;
+.portfoliotileimage {
+  width: 300px;
+  height: auto;
   object-fit: cover;
   margin: auto;
   padding: 0;
   float: left;
 }
 
-.tileimagewrapper {
+.portfoliotileimagewrapper {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -209,12 +215,32 @@ textarea {
   padding: 0;
 }
 
-.tiletext {
-  height: fit-content;
+.portfoliotiletext {
+  height: 100%;
   width: 100%;
   text-align: center;
-  background-color: lightslategray;
+  background-color: whitesmoke;
 }
+
+.portfoliotilelink {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.2em;
+  font-family: kepler-w03-light-scd-cp,'Lato',serif;
+  font-size: 12px;
+}
+
+.portfoliotiletitle {
+  padding-top: 5px;
+  position: relative;
+  top: 10px;
+}
+
+
+.portfoliotiletext {
+  padding-bottom: 5px
+}
+
 
 /* TO DO: STYLE TILES FOR SMALLER VIEWPORTS */
 

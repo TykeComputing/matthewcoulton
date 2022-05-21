@@ -207,6 +207,7 @@ headerTemplate.innerHTML = `
             <a href="puppetry.html"><div class="sublinkbox"><p class="linkp">PUPPETRY</p></div></a>
             <a href="storytelling.html"><div class="sublinkbox"><p class="linkp">STORYTELLING</p></div></a>
             <a href="voice.html"><div class="sublinkbox"><p class="linkp">VOICE</p></div></a>
+            <a href="corporate.html"><div class="sublinkbox"><p class="linkp">CORPORATE</p></div></a>
           </div>
       </div>
       <div class="dropdown">
