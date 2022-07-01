@@ -179,7 +179,7 @@ textarea {
   padding: 0;
   padding-top: 0px;
   column-gap: 5px;
-  row-gap: 10px;
+  row-gap: 0px;
   width: 960px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px; /*height of row*/
@@ -217,7 +217,8 @@ textarea {
 
 .portfoliotiletext {
   height: 100%;
-  width: 100%;
+  width: 300px;
+  max-width: 100%;
   text-align: center;
   background-color: whitesmoke;
 }
@@ -243,6 +244,107 @@ textarea {
   padding-bottom: 5px
 }
 
+/* Gallery Page Tile Styling */
+.sectiongallerymenu {
+  display: grid;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  padding-top: 0px;
+  column-gap: 5px;
+  row-gap: 0px;
+  width: 960px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px; /*height of row*/
+  grid-auto-flow: row;
+  max-width: 90vw;
+}
+
+.gallerymenutile {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-height: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+}
+
+.gallerymenutileimage {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+  padding: 0;
+  float: left;
+}
+
+.gallerymenutileimagewrapper {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.gallerymenutiletext {
+  height: 100%;
+  width: 300px;
+  max-width: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.gallerymenutilelink {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.2em;
+  font-family: kepler-w03-light-scd-cp,'Lato',serif;
+  font-size: 12px;
+}
+
+.gallerymenutiletitle {
+  padding-top: 5px;
+  position: relative;
+  top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+.portfoliotiletext {
+  padding-bottom: 5px
+}
+
+/* CONTACT FORM STYLING */
+
+.contactsection {
+  display: flex;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato',sans-serif;
+  text-align: justify;
+  text-align-last: center;
+  margin-top: -25px;
+}
+
+.form-group {
+  padding-top: 15px;
+}
+
+.form-group br {
+  margin-top: 5px;
+}
+
+.form-control {
+  width: 400px;
+  max-width: 90vw;
+  margin-top: 5px;
+  padding-top: 5px;
+}
 
 /* TO DO: STYLE TILES FOR SMALLER VIEWPORTS */
 

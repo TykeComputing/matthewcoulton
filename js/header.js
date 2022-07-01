@@ -174,7 +174,7 @@ headerTemplate.innerHTML = `
     <div class="headerbanner">
       <div class="leftlogos">
         <a href="https://www.artisticrebellion.co.uk"><img class="logos" id="arlogo" src="img/logos/artisticrebellion.webp" alt="Artistic Rebellion Theatre Logo"></a>
-        <a href="https://www.sotigoestheatre.com"><img class="logos" id="siglogo" src="img/logos/soitgoes.webp" alt="So It Goes Theatre Logo"></a>
+        <a href="https://www.soitgoestheatre.com"><img class="logos" id="siglogo" src="img/logos/soitgoes.webp" alt="So It Goes Theatre Logo"></a>
       </div>
 
       <div class="titletext">
@@ -205,7 +205,7 @@ headerTemplate.innerHTML = `
             <a href="theatre.html"><div class="sublinkbox"><p class="linkp">THEATRE</p></div></a>
             <a href="screen.html"><div class="sublinkbox"><p class="linkp">SCREEN</p></div></a>
             <a href="puppetry.html"><div class="sublinkbox"><p class="linkp">PUPPETRY</p></div></a>
-            <a href="storytelling.html"><div class="sublinkbox"><p class="linkp">STORYTELLING</p></div></a>
+            <!--<a href="storytelling.html"><div class="sublinkbox"><p class="linkp">POETRY & STORYTELLING</p></div></a>-->
             <a href="voice.html"><div class="sublinkbox"><p class="linkp">VOICE</p></div></a>
             <a href="corporate.html"><div class="sublinkbox"><p class="linkp">CORPORATE</p></div></a>
           </div>
@@ -215,8 +215,9 @@ headerTemplate.innerHTML = `
           <div class="dropdown-content">
             <a href="directing.html"><div class="sublinkbox"><p class="linkp">DIRECTING</p></div></a>
             <a href="movement-directing.html"><div class="sublinkbox"><p class="linkp">MOVEMENT DIRECTING</p></div></a>
-            <a href="producing.html"><div class="sublinkbox"><p class="linkp">PRODUCING</p></div></a>
-            <a href="facilitation.html"><div class="sublinkbox"><p class="linkp">FACILITATION</p></div></a>
+            <!--<a href="development.html"><div class="sublinkbox"><p class="linkp">DEVELOPMENT</p></div></a>-->
+            <!--<a href="producing.html"><div class="sublinkbox"><p class="linkp">PRODUCING</p></div></a>-->
+            <!--<a href="facilitation.html"><div class="sublinkbox"><p class="linkp">FACILITATION</p></div></a>-->
           </div>
       </div>
       <div class="dropdown">
