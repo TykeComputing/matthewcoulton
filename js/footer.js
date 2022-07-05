@@ -10,9 +10,8 @@ footerTemplate.innerHTML = `
       flex-shrink: 0;
       justify-content: space-between;
       align-items: center;
-      background-color: #fff;
       position: relative;
-      bottom: 0;
+      bottom: 5px;
       max-width: 960px;
       margin: auto;
     }
@@ -39,6 +38,7 @@ footerTemplate.innerHTML = `
 
     p {
       display: block;
+      color: white;
     }
     
     .social-row {
@@ -55,6 +55,24 @@ footerTemplate.innerHTML = `
       align: center;
     }
 
+    .menubarup {
+      background: url("img/banner.png") repeat-x 0 100%;
+      background-position: top;
+      background-color: white;
+      min-height: 8px;
+      z-index: 1;
+    }
+
+    .fab {
+      color: white;
+    }
+
+    .footerwrapper {
+      background: black;
+      width: 100vw;
+    }
+
+
     #acefull {
       height: 60px;
     }
@@ -68,15 +86,19 @@ footerTemplate.innerHTML = `
 
 
   </style>
-  <footer>
-    <p id="copyright">&copy; 2022 Matthew Coulton</p>
-    <ul class="social-row">
-      <li class="socials"><a href="https://twitter.com/matthew_coulton"><i class="fab fa-twitter"></i></a></li>
-      <li class="socials"><a href="https://instagram.com/matthew_coulton"><i class="fab fa-instagram"></i></a></li>
-      <li class="socials"><a href="https://www.facebook.com/matthewcoultonactor"><i class="fab fa-facebook"></i></a></li>
-      <li><a href="https://www.artscouncil.org.uk"><img id="acefull" src="img/logos/ace.webp" alt="Sponsored by Arts Council England"></a></li>
-    </ul>
-  </footer>
+
+  <div class="menubarup"></div>
+  <div class="footerwrapper">
+    <footer>
+      <p id="copyright">&copy; 2022 Matthew Coulton</p>
+      <ul class="social-row">
+        <li class="socials"><a href="https://twitter.com/matthew_coulton"><i class="fab fa-twitter"></i></a></li>
+        <li class="socials"><a href="https://instagram.com/matthew_coulton"><i class="fab fa-instagram"></i></a></li>
+        <li class="socials"><a href="https://www.facebook.com/matthewcoultonactor"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.artscouncil.org.uk"><img id="acefull" src="img/logos/acewhite.webp" alt="Sponsored by Arts Council England"></a></li>
+      </ul>
+    </footer>
+  </div>
 `;
 
 class Footer extends HTMLElement {
