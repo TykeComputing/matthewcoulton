@@ -87,6 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+main {
+  margin-bottom: 70px;
+}
+
+
 .linebar {
   background: url("img/banner.png") repeat-x 0 960px;
   background-color: transparent;
@@ -167,7 +172,6 @@ textarea {
   margin-top: 25px;
   letter-spacing: 0.2em;
   font-family: kepler-w03-light-scd-cp,'Lato',serif;
-  text-decoration: underline;
 }
 
 
@@ -350,32 +354,32 @@ textarea {
 
 
 .bardown {
-  background: url("img/banner.png") repeat-x 0 100%;
+  background: url("../img/banner.png") repeat-x 0 100%;
   background-color: transparent;
   min-height: 8px;
   z-index: 1;
 }
 
 .barup {
-  background: url("img/banner.png") repeat-x 0 100%;
+  background: url("../img/banner.png") repeat-x 0 100%;
   background-position: top;
-  background-color: white;
+  background-color: transparent;
   min-height: 8px;
   z-index: 1;
 }
 
 .barleft {
-  background: url("img/bannerside.png") repeat-y 0 100%;
+  background: url("../img/bannerside.png") repeat-y 0 100%;
   background-position: left;
-  background-color: white;
+  background-color: transparent;
   min-width: 8px;
   z-index: 1;
 }
 
 .barright {
-  background: url("img/bannerside.png") repeat-y 0 100%;
+  background: url("../img/bannerside.png") repeat-y 0 100%;
   background-position: right;
-  background-color: white;
+  background-color: transparent;
   min-width: 8px;
   z-index: 1;
 }
@@ -572,5 +576,11 @@ textarea {
 header-component {
   position: fixed;
   top: 0;
+  width: 100%;
+}
+
+/* Stick Footer */footer-component {
+  position: fixed;
+  bottom: 0;
   width: 100%;
 }

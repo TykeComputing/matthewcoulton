@@ -14,6 +14,8 @@ footerTemplate.innerHTML = `
       bottom: 5px;
       max-width: 960px;
       margin: auto;
+      z-index: 5;
+      background: transparent;
     }
 
     ul {
@@ -58,7 +60,7 @@ footerTemplate.innerHTML = `
     .menubarup {
       background: url("img/banner.png") repeat-x 0 100%;
       background-position: top;
-      background-color: white;
+      background-color: transparent;
       min-height: 8px;
       z-index: 1;
     }
