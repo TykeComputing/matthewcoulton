@@ -267,7 +267,7 @@ headerTemplate.innerHTML = `
             <a href="performance.html"><div class="linkbox"><p class="linkp">PERFORMANCE</p></div></a>
               <div class="dropdown-content">
                 <a href="theatre.html"><div class="sublinkbox"><p class="linkp">THEATRE</p></div></a>
-                <a href="screen.html"><div class="sublinkbox"><p class="linkp">SCREEN</p></div></a>
+                <a href="film.html"><div class="sublinkbox"><p class="linkp">FILM</p></div></a>
                 <a href="puppetry.html"><div class="sublinkbox"><p class="linkp">PUPPETRY</p></div></a>
                 <!--<a href="storytelling.html"><div class="sublinkbox"><p class="linkp">POETRY & STORYTELLING</p></div></a>-->
                 <a href="voice.html"><div class="sublinkbox"><p class="linkp">VOICE</p></div></a>
