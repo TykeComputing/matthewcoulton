@@ -258,6 +258,7 @@ main {
   grid-auto-rows: auto; /*height of row*/
   grid-auto-flow: row;
   max-width: 90vw;
+  justify-content: center;
 }
 
 .gallerymenutile {
