@@ -27,7 +27,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="stylesheet" href="css/video.css">
 
   <meta name="theme-color" content="#fafafa">
 
@@ -53,6 +53,57 @@
       </div>
       -->
       <h2 class="sectiontitle">MOVEMENT DIRECTING</h2>
+    </section>
+
+    <!--Video Gallery-->
+    
+    <section class="videogallery">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div class="menubarup"></div>
+      <div class="container">
+
+          <div class="side-bar">
+
+              <ul class="list">
+                  <li class="active" data-src="img/portfolios/md/mobydick.mp4">Moby Dick, 2019</li>
+                  <li data-src="img/portfolios/md/fataleggs.mp4">Fatal Eggs, 2019</li>
+                  <li data-src="img/portfolios/md/richard.mp4">Richard III, 2018</li>
+                  <li data-src="img/portfolios/md/dante.mp4">Dante's Divine Comedy, 2017</li>
+              </ul>
+
+          </div>
+
+          <div class="video-container">
+              <video src="img/portfolios/film/showreel.mp4" controls></video>
+          </div>
+
+      </div>
+      <div class="menubardown"></div>
+
+      <!--Video Gallery Scripts-->
+      <script>
+
+      let sideBar = document.querySelector('.container .side-bar');
+
+      document.querySelector('#menu-btn').onclick = () =>{
+          sideBar.classList.toggle('active');
+      };
+
+      let video = document.querySelector('.container .video-container video');
+      let videoLinks = document.querySelectorAll('.container .side-bar .list li');
+
+      videoLinks.forEach(link =>{
+          link.onclick = () =>{
+              let src = link.getAttribute('data-src');
+              video.src = src;
+              sideBar.classList.remove('active');
+              videoLinks.forEach(remove =>{remove.classList.remove('active')});
+              link.classList.add('active');
+          }
+      })
+
+      </script>
+
     </section>
 
     <section class="portfoliotiles">
@@ -261,7 +312,7 @@
             <br>
             Dir. Douglas Baker
             <br>
-            2016 & 2017
+            2016 | 2017
             </p>
           </div>
         </figcaption>

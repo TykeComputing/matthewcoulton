@@ -99,6 +99,31 @@ main {
   z-index: 1;
 }
 
+/*Torn Borders Bars*/
+.menubardown {
+  background: url("../img/banner.png") repeat-x 0 100%;
+  background-color: white;
+  min-height: 8px;
+  z-index: 1;
+}
+
+.menubarup {
+  background: url("../img/banner.png") repeat-x 0 100%;
+  background-position: top;
+  background-color: white;
+  min-height: 8px;
+  z-index: 1;
+}
+
+.rightIncline {
+  transform: rotate(5deg)
+
+}
+
+.leftIncline {
+  transform: rotate(355deg)
+}
+
 .headshots {
   display: flex;
   justify-content: center;
@@ -258,7 +283,6 @@ main {
   grid-auto-rows: auto; /*height of row*/
   grid-auto-flow: row;
   max-width: 90vw;
-  justify-content: center;
 }
 
 .gallerymenutile {
