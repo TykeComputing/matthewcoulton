@@ -79,6 +79,12 @@ footerTemplate.innerHTML = `
       height: 60px;
     }
 
+    #spotlightlogo {
+      position: relative;
+      height: 40px;
+      bottom: 8px;
+    }
+
     #copyright {
       font-family: kepler-w03-light-scd-cp,'Lato',serif;
       font-size: 18px;
@@ -94,11 +100,11 @@ footerTemplate.innerHTML = `
     <footer>
       <p id="copyright">&copy; 2024 Matthew Coulton</p>
       <ul class="social-row">
-        <li class="socials"><a href="https://twitter.com/matthew_coulton"><i class="fab fa-twitter"></i></a></li>
-        <li class="socials"><a href="https://instagram.com/matthew_coulton"><i class="fab fa-instagram"></i></a></li>
-        <li class="socials"><a href="https://www.facebook.com/matthewcoultonactor"><i class="fab fa-facebook"></i></a></li>
-        <!-- <li class="socials"><a href="https://app.spotlight.com/8615-4506-3434"><i class="fab" src="img/logos/spotlight-logo-.webp"></i></a></li> -->
-        <li><a href="https://www.artscouncil.org.uk"><img id="acefull" src="img/logos/acewhite.webp" alt="Sponsored by Arts Council England"></a></li>
+        <li class="socials"><a href="https://twitter.com/matthew_coulton" target=”_blank”><i class="fab fa-twitter"></i></a></li>
+        <li class="socials"><a href="https://instagram.com/matthew_coulton" target=”_blank”><i class="fab fa-instagram"></i></a></li>
+        <li class="socials"><a href="https://www.facebook.com/matthewcoultonactor" target=”_blank”><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://app.spotlight.com/8615-4506-3434" target=”_blank”><img id="spotlightlogo" src="img/logos/spotlight-logo-.webp" /></a></li>
+        <li><a href="https://www.artscouncil.org.uk" target=”_blank”><img id="acefull" src="img/logos/acewhite.webp" alt="Sponsored by Arts Council England"></a></li>
       </ul>
     </footer>
   </div>
