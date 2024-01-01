@@ -3,7 +3,7 @@ const footerTemplate = document.createElement('template');
 footerTemplate.innerHTML = `
   <style>
     footer {
-      height: 60px;
+      height: 70px;
       padding: 0 10px;
       list-style: none;
       display: flex;
@@ -80,10 +80,10 @@ footerTemplate.innerHTML = `
     }
 
     #copyright {
-      font-family: kepler-w03-light-scd-cp,serif;
-      font-size: 8px;
+      font-family: kepler-w03-light-scd-cp,'Lato',serif;
+      font-size: 18px;
       line-height: normal;
-      font: normal normal normal 17px/1.4em 'eb garamond',serif;
+      font: normal normal normal 17px/1.4em;
     }
 
 
@@ -92,11 +92,12 @@ footerTemplate.innerHTML = `
   <div class="menubarup"></div>
   <div class="footerwrapper">
     <footer>
-      <p id="copyright">&copy; 2022 Matthew Coulton</p>
+      <p id="copyright">&copy; 2024 Matthew Coulton</p>
       <ul class="social-row">
         <li class="socials"><a href="https://twitter.com/matthew_coulton"><i class="fab fa-twitter"></i></a></li>
         <li class="socials"><a href="https://instagram.com/matthew_coulton"><i class="fab fa-instagram"></i></a></li>
         <li class="socials"><a href="https://www.facebook.com/matthewcoultonactor"><i class="fab fa-facebook"></i></a></li>
+        <!-- <li class="socials"><a href="https://app.spotlight.com/8615-4506-3434"><i class="fab" src="img/logos/spotlight-logo-.webp"></i></a></li> -->
         <li><a href="https://www.artscouncil.org.uk"><img id="acefull" src="img/logos/acewhite.webp" alt="Sponsored by Arts Council England"></a></li>
       </ul>
     </footer>

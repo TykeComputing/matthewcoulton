@@ -2,659 +2,644 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title>Matthew Coulton</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Matthew Coulton</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--TODO: Finish These-->
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <!--TODO: Finish These-->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-  <!--Font Awesome for icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <!--Font Awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-  <!--Fonts for Lato-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/video.css">
+    <!-- Place favicon.ico in the root directory -->
 
-  <meta name="theme-color" content="#fafafa">
+    <!--Fonts for Lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet"> 
 
-  <!--Script inserts of header and footer code-->
-  <script src="js/header.js" type="text/javascript" defer></script>
-  <script src="js/footer.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/video.css">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <!--Script inserts of header and footer code-->
+    <script src="js/header.js" type="text/javascript" defer></script>
+    <script src="js/menu.js" type="text/javascript" defer></script>
+    <script src="js/footer.js" type="text/javascript" defer></script>
 </head>
 
-<body>
-  
-  <header-component></header-component>
+<body class="bgwrapper">
 
-  <main>
-   <!--MAIN CONTENT HERE-->
+    <header-component></header-component>
+    <menu-component class="menupane"></menu-component>
 
-   <section class="sectionheader">
-    <!--
-    <div class="sectionbanner">
-      <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
-      <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
-      <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
-      <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
-      <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
-    </div>
-    -->
-    <h2 class="sectiontitle">SCREEN</h2>
-  </section>
+    <main>
 
-    <!--Video Gallery-->
-    
-    <section class="videogallery">
-      <div id="menu-btn" class="fas fa-bars"></div>
-      <div class="menubarup"></div>
-      <div class="container">
+        <div class="pagewrapper">
 
-          <div class="side-bar">
-
-              <ul class="list">
-                  <li class="active" data-src="img/portfolios/screen/showreel.mp4">Acting Showreel</li>
-                  <li data-src="img/portfolios/screen/clownreel.mp4">Clown Showreel</li>
-              </ul>
-
-          </div>
-
-          <div class="video-container">
-              <video src="img/portfolios/screen/showreel.mp4" controls></video>
-          </div>
-
-      </div>
-      <div class="menubardown"></div>
-
-      <!--Video Gallery Scripts-->
-      <script>
-
-      let sideBar = document.querySelector('.container .side-bar');
-
-      document.querySelector('#menu-btn').onclick = () =>{
-          sideBar.classList.toggle('active');
-      };
-
-      let video = document.querySelector('.container .video-container video');
-      let videoLinks = document.querySelectorAll('.container .side-bar .list li');
-
-      videoLinks.forEach(link =>{
-          link.onclick = () =>{
-              let src = link.getAttribute('data-src');
-              video.src = src;
-              sideBar.classList.remove('active');
-              videoLinks.forEach(remove =>{remove.classList.remove('active')});
-              link.classList.add('active');
-          }
-      })
-
-      </script>
-
-    </section>
-
-
-    <section class="portfoliotiles">
-      <!--
-        TEMPLATE TILE
-        <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper filmx">
-            <img class="portfoliotileimage" src="img/portfolios/screen/bannerx.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">TITLE</h3>
-            <div class="portfoliotileinfo">
-              p>Role (type of role)
-              <br>
-              film type
-              <br>
-              Directed by DIRECTOR
-              <br>
-              20xx
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-      -->
-
-
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen23">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner23.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">THE OUTRUN</h3>
-            <div class="portfoliotileinfo">
-              <p>Male Stranger (Feat.)
-              <br>
-              Feature Film
-              <br>
-              Dir. Nora Fingsheidt
-              <br>
-              2022
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen22">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner22.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">MIDNIGHT RIDE</h3>
-            <div class="portfoliotileinfo">
-              <p>Theo (Feat.)
-              <br>
-              Short Film
-              <br>
-              Dir. Alessandro Farrattini Pojani
-              <br>
-              2022
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-    
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen21">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner21.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">HALIFAX TVC</h3>
-            <div class="portfoliotileinfo">
-              <p>Cyclist (Feat.)
-              <br>
-              Commercial
-              <br>
-              Dir. ThirtyTwo
-              <br>
-              2021
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen20">
-              <img class="portfoliotileimage" src="img/portfolios/screen/banner20.jpg" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">NewWaveMedia - B-MOVIE CAMPAIGN</h3>
-              <div class="portfoliotileinfo">
-                <p>The Clown (Lead)
-                <br>
-                Commercial
-                <br>
-                Dir. Alex Nicholson
-                <br>
-                2019
-                </p>
-              </div>
-            </figcaption>
-          </a>
-        </div>
-
-
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen19">
-              <img class="portfoliotileimage" src="img/portfolios/screen/banner19.png" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">IT'S A MIME'S LIFE</h3>
-              <div class="portfoliotileinfo">
-                <p>The Mime (Lead)
-                <br>
-                Short Film
-                <br>
-                Dir. Simon Poggi
-                <br>
-                2019
-                </p>
-              </div>
-            </figcaption>
-          </a>
-        </div>
-
-
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen18">
-              <img class="portfoliotileimage" src="img/portfolios/screen/banner18.jpg" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">KEAT'S ODES</h3>
-              <div class="portfoliotileinfo">
-                <p>John Keats (Lead)
-                <br>
-                Poetry Shorts
-                <br>
-                Dir. Peter Phillips
-                <br>
-                2019
-                </p>
-              </div>
-            </figcaption>
-          </a>
-        </div>
-
-
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen17">
-              <img class="portfoliotileimage" src="img/portfolios/screen/banner17.jpg" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">JAGUAR TVC</h3>
-              <div class="portfoliotileinfo">
-                <p>Porter (Feat.)
-                <br>
-                Commercial
-                <br>
-                Dir. Chris Palmer
-                <br>
-                2018
-                </p>
-              </div>
-            </figcaption>
-          </a>
-        </div>
-
-
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen16">
-              <img class="portfoliotileimage" src="img/portfolios/screen/banner16.jpg" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">LYNN'S STORY</h3>
-              <div class="portfoliotileinfo">
-                <p>Lynn (Lead)
-                <br>
-                Short Film
-                <br>
-                Dir. Kayode  Olorunfemi
-                <br>
-                2018
-                </p>
-              </div>
-            </figcaption>
-          </a>
-        </div>
-
-
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen15">
-              <img class="portfoliotileimage" src="img/portfolios/screen/screen15.jpg" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">INTROSPECTUM MOTEL</h3>
-              <div class="portfoliotileinfo">
-                <p>Paul (co-lead)
-                <br>
-                Pilot
-                <br>
-                Dir. Marcel Adorjan
-                <br>
-                2017
-                </p>
-              </div>
-            </figcaption>
-          </a>
-        </div>
-
-        
+            <div class="leftpane">
+              <section class="sectionheader">
+                <!--
+                <div class="sectionbanner">
+                  <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
+                  <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
+                  <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
+                  <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
+                  <img class="theatreimg" src="img/slideshowbanners/banner1.webp" alt="">
+                </div>
+                -->
+                <h2 class="sectiontitle">SCREEN</h2>
+              </section>
+            
+              <!--Video Gallery-->
+              
+              <section class="videogallery">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div class="container">
           
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen14">
-              <img class="portfoliotileimage" src="img/portfolios/screen/banner14.jpg" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">YOUTH CONDEMN</h3>
-              <div class="portfoliotileinfo">
-                <p>Archie (Lead)
-                <br>
-                Short Film
-                <br>
-                Dir. Timothy Reynard
-                <br>
-                2017
-                </p>
-              </div>
-            </figcaption>
-          </a>
+                    <div class="side-bar">
+          
+                        <ul class="list">
+                            <li class="active" data-src="img/portfolios/screen/showreel.mp4">Acting Showreel</li>
+                            <li data-src="img/portfolios/screen/clownreel.mp4">Clown Showreel</li>
+                        </ul>
+          
+                    </div>
+          
+                    <div class="video-container">
+                        <video src="img/portfolios/screen/showreel.mp4" controls></video>
+                    </div>
+          
+                </div>
+              
+          
+                <!--Video Gallery Scripts-->
+                <script>
+          
+                let sideBar = document.querySelector('.container .side-bar');
+          
+                document.querySelector('#menu-btn').onclick = () =>{
+                    sideBar.classList.toggle('active');
+                };
+          
+                let video = document.querySelector('.container .video-container video');
+                let videoLinks = document.querySelectorAll('.container .side-bar .list li');
+          
+                videoLinks.forEach(link =>{
+                    link.onclick = () =>{
+                        let src = link.getAttribute('data-src');
+                        video.src = src;
+                        sideBar.classList.remove('active');
+                        videoLinks.forEach(remove =>{remove.classList.remove('active')});
+                        link.classList.add('active');
+                    }
+                })
+          
+                </script>
+          
+              </section>
+          
+              <!--
+              <section class="portfoliotiles">                    
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen23">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner23.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">THE OUTRUN</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Male Stranger (Feat.)
+                        <br>
+                        Feature Film
+                        <br>
+                        Dir. Nora Fingsheidt
+                        <br>
+                        2022
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen22">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner22.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">MIDNIGHT RIDE</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Theo (Feat.)
+                        <br>
+                        Short Film
+                        <br>
+                        Dir. Alessandro Farrattini Pojani
+                        <br>
+                        2022
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+              
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen21">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner21.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">HALIFAX TVC</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Cyclist (Feat.)
+                        <br>
+                        Commercial
+                        <br>
+                        Dir. ThirtyTwo
+                        <br>
+                        2021
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+          
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen20">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/banner20.jpg" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">NewWaveMedia - B-MOVIE CAMPAIGN</h3>
+                        <div class="portfoliotileinfo">
+                          <p>The Clown (Lead)
+                          <br>
+                          Commercial
+                          <br>
+                          Dir. Alex Nicholson
+                          <br>
+                          2019
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+          
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen19">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/banner19.png" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">IT'S A MIME'S LIFE</h3>
+                        <div class="portfoliotileinfo">
+                          <p>The Mime (Lead)
+                          <br>
+                          Short Film
+                          <br>
+                          Dir. Simon Poggi
+                          <br>
+                          2019
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+          
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen18">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/banner18.jpg" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">KEAT'S ODES</h3>
+                        <div class="portfoliotileinfo">
+                          <p>John Keats (Lead)
+                          <br>
+                          Poetry Shorts
+                          <br>
+                          Dir. Peter Phillips
+                          <br>
+                          2019
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+          
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen17">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/banner17.jpg" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">JAGUAR TVC</h3>
+                        <div class="portfoliotileinfo">
+                          <p>Porter (Feat.)
+                          <br>
+                          Commercial
+                          <br>
+                          Dir. Chris Palmer
+                          <br>
+                          2018
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+          
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen16">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/banner16.jpg" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">LYNN'S STORY</h3>
+                        <div class="portfoliotileinfo">
+                          <p>Lynn (Lead)
+                          <br>
+                          Short Film
+                          <br>
+                          Dir. Kayode  Olorunfemi
+                          <br>
+                          2018
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+          
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen15">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/screen15.jpg" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">INTROSPECTUM MOTEL</h3>
+                        <div class="portfoliotileinfo">
+                          <p>Paul (co-lead)
+                          <br>
+                          Pilot
+                          <br>
+                          Dir. Marcel Adorjan
+                          <br>
+                          2017
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+                  
+                    
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen14">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/banner14.jpg" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">YOUTH CONDEMN</h3>
+                        <div class="portfoliotileinfo">
+                          <p>Archie (Lead)
+                          <br>
+                          Short Film
+                          <br>
+                          Dir. Timothy Reynard
+                          <br>
+                          2017
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen13">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/banner13.jpg" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">BLOODCHILD</h3>
+                        <div class="portfoliotileinfo">
+                          <p>Asa (Lead)
+                          <br>
+                          Short Film
+                          <br>
+                          Dir. Rosanna Strange
+                          <br>
+                          2017
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen12">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/banner12.jpg" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">THE WAIT FOR THE MIDNIGHT THIRTEEN</h3>
+                        <div class="portfoliotileinfo">
+                          <p>Mr Hopkins (co-lead)
+                          <br>
+                          Feature Film (Pilot)
+                          <br>
+                          Dir. Timothy Reynard
+                          <br>
+                          2016
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+                
+                  <div class="portfoliotile">
+                    <a class="portfoliotilelink" href="">  
+                      <figure class="portfoliotileimagewrapper screen11">
+                        <img class="portfoliotileimage" src="img/portfolios/screen/banner11.jpg" alt="Placeholder">
+                      </figure>
+                      <figcaption class="portfoliotiletext">
+                        <h3 class="portfoliotiletitle">BURGER KING KING DEAL</h3>
+                        <div class="portfoliotileinfo">
+                          <p>Hero 2 (Hero)
+                          <br>
+                          Commercial
+                          <br>
+                          Dir.  Winn Bates
+                          <br>
+                          2016
+                          </p>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+          
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen10">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner10.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">POWWOW MEDIA CAMPAIGN</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Barista (Hero)
+                        <br>
+                        Commercial
+                        <br>
+                        Still Productions Ltd.
+                        <br>
+                        2015
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen9">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner9.png" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">HOLBY CITY</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Barry 'Goldfinger' Hutchinson (Guest Star)
+                        <br>
+                        BBC TV
+                        <br>
+                        Dir. Jennie  Darnell
+                        <br>
+                        2015
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen8">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner8.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">THE RETRIBUTE</h3>
+                      <div class="portfoliotileinfo">
+                        <p>The Man (Lead)
+                        <br>
+                        Short Film
+                        <br>
+                        Dir. Rosanna Strange
+                        <br>
+                        2015
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen7">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner7.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">CORPSE REMOVER</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Sam (Lead)
+                        <br>
+                        Short Film
+                        <br>
+                        Dir. Alessandro Farrattini Pojani
+                        <br>
+                        2015
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen6">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner6.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">STANLEY, A MAN OF VARIETY</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Choreography & Movement Double
+                        <br>
+                        Feature Film
+                        <br>
+                        Dir. Stephen Cookson
+                        <br>
+                        2015
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen5">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner5.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">ROCKET MAN</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Tomkins (Lead)
+                        <br>
+                        Short Film
+                        <br>
+                        Dir. Rosanna Strange
+                        <br>
+                        2015
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+                
+                  
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen4">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner4.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">FORGOTTEN?</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Sam (Lead)
+                        <br>
+                        Short Film
+                        <br>
+                        Dir. Deaglan Brennan
+                        <br>
+                        2015
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen3">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner3.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">INK</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Eli (Lead)
+                        <br>
+                        Short Film
+                        <br>
+                        Dir. Kath Walker
+                        <br>
+                        2015
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+          
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen2">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner2.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle">NEAR MISS</h3>
+                      <div class="portfoliotileinfo">
+                        <p>George (Lead)
+                        <br>
+                        Short film
+                        <br>
+                        Dir. The Company
+                        <br>
+                        2014
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+                
+                  
+                <div class="portfoliotile">
+                  <a class="portfoliotilelink" href="">  
+                    <figure class="portfoliotileimagewrapper screen1">
+                      <img class="portfoliotileimage" src="img/portfolios/screen/banner1.jpg" alt="Placeholder">
+                    </figure>
+                    <figcaption class="portfoliotiletext">
+                      <h3 class="portfoliotiletitle" style="letter-spacing: 0.01em; font-size: 13px;">THE ONLY ONE WHO KNOWS YOU'RE AFRAID</h3>
+                      <div class="portfoliotileinfo">
+                        <p>Commando Sentry (Feat.)
+                        <br>
+                        Short Film
+                        <br>
+                        Dir. Timothy Reynard
+                        <br>
+                        2011
+                        </p>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+          
+          
+              </section>
+            -->
+            </div>
+
         </div>
 
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen13">
-              <img class="portfoliotileimage" src="img/portfolios/screen/banner13.jpg" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">BLOODCHILD</h3>
-              <div class="portfoliotileinfo">
-                <p>Asa (Lead)
-                <br>
-                Short Film
-                <br>
-                Dir. Rosanna Strange
-                <br>
-                2017
-                </p>
-              </div>
-            </figcaption>
-          </a>
-        </div>
-
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen12">
-              <img class="portfoliotileimage" src="img/portfolios/screen/banner12.jpg" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">THE WAIT FOR THE MIDNIGHT THIRTEEN</h3>
-              <div class="portfoliotileinfo">
-                <p>Mr Hopkins (co-lead)
-                <br>
-                Feature Film (Pilot)
-                <br>
-                Dir. Timothy Reynard
-                <br>
-                2016
-                </p>
-              </div>
-            </figcaption>
-          </a>
-        </div>
-
-      
-        <div class="portfoliotile">
-          <a class="portfoliotilelink" href="">  
-            <figure class="portfoliotileimagewrapper screen11">
-              <img class="portfoliotileimage" src="img/portfolios/screen/banner11.jpg" alt="Placeholder">
-            </figure>
-            <figcaption class="portfoliotiletext">
-              <h3 class="portfoliotiletitle">BURGER KING KING DEAL</h3>
-              <div class="portfoliotileinfo">
-                <p>Hero 2 (Hero)
-                <br>
-                Commercial
-                <br>
-                Dir.  Winn Bates
-                <br>
-                2016
-                </p>
-              </div>
-            </figcaption>
-          </a>
-        </div>
-
-
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen10">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner10.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">POWWOW MEDIA CAMPAIGN</h3>
-            <div class="portfoliotileinfo">
-              <p>Barista (Hero)
-              <br>
-              Commercial
-              <br>
-              Still Productions Ltd.
-              <br>
-              2015
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen9">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner9.png" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">HOLBY CITY</h3>
-            <div class="portfoliotileinfo">
-              <p>Barry 'Goldfinger' Hutchinson (Guest Star)
-              <br>
-              BBC TV
-              <br>
-              Dir. Jennie  Darnell
-              <br>
-              2015
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen8">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner8.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">THE RETRIBUTE</h3>
-            <div class="portfoliotileinfo">
-              <p>The Man (Lead)
-              <br>
-              Short Film
-              <br>
-              Dir. Rosanna Strange
-              <br>
-              2015
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen7">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner7.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">CORPSE REMOVER</h3>
-            <div class="portfoliotileinfo">
-              <p>Sam (Lead)
-              <br>
-              Short Film
-              <br>
-              Dir. Alessandro Farrattini Pojani
-              <br>
-              2015
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen6">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner6.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">STANLEY, A MAN OF VARIETY</h3>
-            <div class="portfoliotileinfo">
-              <p>Choreography & Movement Double
-              <br>
-              Feature Film
-              <br>
-              Dir. Stephen Cookson
-              <br>
-              2015
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen5">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner5.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">ROCKET MAN</h3>
-            <div class="portfoliotileinfo">
-              <p>Tomkins (Lead)
-              <br>
-              Short Film
-              <br>
-              Dir. Rosanna Strange
-              <br>
-              2015
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-      
         
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen4">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner4.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">FORGOTTEN?</h3>
-            <div class="portfoliotileinfo">
-              <p>Sam (Lead)
-              <br>
-              Short Film
-              <br>
-              Dir. Deaglan Brennan
-              <br>
-              2015
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
+    </main>
 
 
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen3">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner3.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">INK</h3>
-            <div class="portfoliotileinfo">
-              <p>Eli (Lead)
-              <br>
-              Short Film
-              <br>
-              Dir. Kath Walker
-              <br>
-              2015
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
+    <footer-component></footer-component>
 
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen2">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner2.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle">NEAR MISS</h3>
-            <div class="portfoliotileinfo">
-              <p>George (Lead)
-              <br>
-              Short film
-              <br>
-              Dir. The Company
-              <br>
-              2014
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-      
-        
-      <div class="portfoliotile">
-        <a class="portfoliotilelink" href="">  
-          <figure class="portfoliotileimagewrapper screen1">
-            <img class="portfoliotileimage" src="img/portfolios/screen/banner1.jpg" alt="Placeholder">
-          </figure>
-          <figcaption class="portfoliotiletext">
-            <h3 class="portfoliotiletitle" style="letter-spacing: 0.01em; font-size: 13px;">THE ONLY ONE WHO KNOWS YOU'RE AFRAID</h3>
-            <div class="portfoliotileinfo">
-              <p>Commando Sentry (Feat.)
-              <br>
-              Short Film
-              <br>
-              Dir. Timothy Reynard
-              <br>
-              2011
-              </p>
-            </div>
-          </figcaption>
-        </a>
-      </div>
-
-
-    </section>
-
-
-  </main>
-  
-  <footer-component></footer-component>
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!--TODO: Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
+    <!--TODO: Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>

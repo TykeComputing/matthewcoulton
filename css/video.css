@@ -34,9 +34,9 @@
   max-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 3% 10%;
-  width: 100vw;
-  background: black;
+  padding: 3%;
+  width: 100%;
+  background: transparent;
   /*background:linear-gradient(90deg, #fff 60%, #eee 40.1%);*/
 }
 
@@ -98,7 +98,7 @@
 }
 
 #menu-btn{
-  position: fixed;
+  position: relative;
   top:20px; left:30px;
   font-size: 40px;
   cursor: pointer;
