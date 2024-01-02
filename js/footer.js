@@ -77,6 +77,8 @@ footerTemplate.innerHTML = `
 
     #acefull {
       height: 60px;
+      position: relative;
+      top: 2px;
     }
 
     #spotlightlogo {

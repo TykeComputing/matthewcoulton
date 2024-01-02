@@ -120,7 +120,7 @@ menuTemplate.innerHTML = `
               <li><a href="screen.html">Screen</a></li>
               <!-- <li><a href="underconstruction.html">Voice</a></li> -->
               <li><a href="puppetry.html">Puppetry</a></li>
-              <!-- <li><a href="movement.html">Movement</a></li> -->
+              <!-- <li><a href="mime-movement.html">Mime & Movement</a></li> -->
               <!-- <li><a href="storytelling-poetry.html">Storytelling & Poetry</a></li> -->
             </ul>
           </div>
