@@ -2,20 +2,36 @@ const footerTemplate = document.createElement('template');
 
 footerTemplate.innerHTML = `
   <style>
+
+  /* MOBILE ONLY */
+    @media only screen and (max-width: 768px) {  
+      .social-row {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+  
+  /* MOBILE FIRST */
+
     footer {
       height: 70px;
       padding: 0 10px;
       list-style: none;
       display: flex;
+      flex-direction: column;
       flex-shrink: 0;
-      justify-content: space-between;
       align-items: center;
       position: relative;
       bottom: 5px;
-      max-width: 960px;
+      max-width: 100%;
       margin: auto;
       z-index: 5;
       background: transparent;
+      justify-content: space-between;
     }
 
     ul {
@@ -48,7 +64,8 @@ footerTemplate.innerHTML = `
     }
     
     .social-row li a {
-      margin: 0 10px;
+      margin: 0;
+      padding-top: 0;
     }
 
     .socials  {
@@ -74,7 +91,6 @@ footerTemplate.innerHTML = `
       width: 100vw;
     }
 
-
     #acefull {
       height: 60px;
       position: relative;
@@ -83,15 +99,47 @@ footerTemplate.innerHTML = `
 
     #spotlightlogo {
       position: relative;
-      height: 40px;
-      bottom: 8px;
+      height: 25px;
+      bottom: 15px;
     }
 
     #copyright {
       font-family: kepler-w03-light-scd-cp,'Lato',serif;
-      font-size: 18px;
+      font-size: 12px;
       line-height: normal;
       font: normal normal normal 17px/1.4em;
+    }
+
+    #acelogo {
+      display:none;
+    }
+
+    /* DESKTOP STYLING */
+    @media only screen and (min-width: 768px) {
+
+      footer {
+        height: 70px;
+        flex-direction: row;
+      }
+
+      .social-row li a {
+        margin: 0 10px;
+      }
+
+      #copyright {
+        font-size: 16px;
+      }
+
+      #acelogo {
+        display: inline;
+      }
+
+      #spotlightlogo {
+        position: relative;
+        height: 40px;
+        bottom: 8px;
+      }
+
     }
 
 
@@ -106,7 +154,7 @@ footerTemplate.innerHTML = `
         <li class="socials"><a href="https://instagram.com/matthew_coulton" target=”_blank”><i class="fab fa-instagram"></i></a></li>
         <li class="socials"><a href="https://www.facebook.com/matthewcoultonactor" target=”_blank”><i class="fab fa-facebook"></i></a></li>
         <li><a href="https://app.spotlight.com/8615-4506-3434" target=”_blank”><img id="spotlightlogo" src="img/logos/spotlight-logo-.webp" /></a></li>
-        <li><a href="https://www.artscouncil.org.uk" target=”_blank”><img id="acefull" src="img/logos/acewhite.webp" alt="Sponsored by Arts Council England"></a></li>
+        <li id="acelogo"><a href="https://www.artscouncil.org.uk" target=”_blank”><img id="acefull" src="img/logos/acewhite.webp" alt="Sponsored by Arts Council England"></a></li>
       </ul>
     </footer>
   </div>

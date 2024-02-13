@@ -3,6 +3,8 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
   <style>
 
+  /* Mobile First */
+
   header {
     padding-right: 2vw;
     margin: 0;
@@ -12,8 +14,8 @@ headerTemplate.innerHTML = `
   .titlename {
     background-color: transparent;
     color: white;
-    text-align: right;
-    font-size: 40px;
+    text-align: center;
+    font-size: 25px;
     font-weight:normal;
     text-decoration:underline;
     font-family: kepler-w03-light-scd-cp,'Lato',serif;
@@ -25,9 +27,21 @@ headerTemplate.innerHTML = `
     min-height: 27px;
   }
 
-.titlelink {
-  text-decoration: none;
-}
+  .titlelink {
+    text-decoration: none;
+    text-align: right;
+
+  }
+
+  /* Desktop Styling */
+  @media only screen and (min-width: 768px) {
+
+  .titlename {
+    font-size: 40px;
+    text-align: right;
+  }
+
+  }
 
   </style>
 

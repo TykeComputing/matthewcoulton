@@ -21,6 +21,7 @@ menuTemplate.innerHTML = `
         right:3vw;
         top: 50%;
         transform: translate(0%, -50%);
+        z-index: 20;
     }
 
     input#creativecheck, input#performancecheck {
