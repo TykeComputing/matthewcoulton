@@ -16,7 +16,7 @@ menuTemplate.innerHTML = `
         line-height: normal;
         overflow-wrap: break-word;
         min-height: 27px;
-        display: block;
+        display: none;
         position: fixed;
         right:3vw;
         top: 50%;
@@ -26,6 +26,41 @@ menuTemplate.innerHTML = `
 
     input#creativecheck, input#performancecheck {
       display: none;
+    }
+
+    .menubarcontainer {
+      display: block;
+      cursor: pointer;
+      margin-top: 60px;
+      margin-left: 46%;
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    .menubar1, .menubar2, .menubar3 {
+      width: 35px;
+      height: 2px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+      margin-bottom: 0;
+    }
+
+    /* Rotate first bar */
+    .changebar1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .changebar2 {
+      opacity: 0;
+    }
+
+    .changebar3 {
+      transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .change nav {
+      display: block;
     }
 
     .topmenu a, .submenu a {
@@ -89,8 +124,34 @@ menuTemplate.innerHTML = `
       max-height: 100%;
     }
 
+    /* DESKTOP STYLING */ 
+    @media only screen and (min-width: 768px) {
+      
+      nav {
+        display: block;
+      }
+      
+      .menubarcontainer {
+        display: none;
+      }
+
+    }
+
   </style>
 
+  <script>
+    function openMenu() {
+      menubar1.classList.toggle("changebar1");
+      menubar2.classList.toggle("changebar2");
+      menubar3.classList.toggle("changebar3");
+    }
+  </script>
+
+  <div class="menubarcontainer" onclick="openMenu()">
+    <div class="menubar1"></div>
+    <div class="menubar2"></div>
+    <div class="menubar3"></div>
+  </div>
 
   <nav class="navbar">
 

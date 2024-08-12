@@ -9,6 +9,8 @@ headerTemplate.innerHTML = `
     padding-right: 2vw;
     margin: 0;
     padding-top: 0;
+    padding-bottom: 0;
+    background-color: black;
   }
   
   .titlename {
@@ -30,16 +32,27 @@ headerTemplate.innerHTML = `
   .titlelink {
     text-decoration: none;
     text-align: right;
-
+    margin: 0;
+    
   }
 
   /* Desktop Styling */
   @media only screen and (min-width: 768px) {
 
-  .titlename {
-    font-size: 40px;
-    text-align: right;
-  }
+    .titlename {
+      font-size: 40px;
+      text-align: right;
+      padding-top: 0.4em;
+      padding-bottom: 0.2em;
+    }
+
+    header{
+      background-color: transparent;
+    }
+
+    .menubardown {
+      display: none;
+    }
 
   }
 
@@ -49,7 +62,9 @@ headerTemplate.innerHTML = `
     <div>
       <a href="index.html" class="titlelink"><h1 class="titlename">MATTHEW COULTON</h1></a>
     </div>
+    
   </header>
+  
 `;
 
 class Header extends HTMLElement {
